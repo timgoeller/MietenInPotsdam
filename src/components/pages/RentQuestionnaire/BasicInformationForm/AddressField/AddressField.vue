@@ -1,6 +1,6 @@
 <script setup>
 import {ref, watch} from 'vue'
-import { supabase } from '../../../../../utils/supabase'
+import { supabase } from '../../../../../../utils/supabase'
 import { onClickOutside } from '@vueuse/core'
 
 let searchTerm = ref()
@@ -28,15 +28,18 @@ const clickSuggestion = (suggestion) => {
 })
 
 const validateAddress = async (address) => {
-    const { data, error } = await supabase
+    if(searchTerm.value) {
+        const { data, error } = await supabase
         .from('distinct_street')
         .select()
         .textSearch('street', searchTerm.value.replace(' ', ' & '))
 
-    if(data.length < 1) {
-        return "Keine Straßse mit diesem Namen gefunden!"
+        if(data.length < 1) {
+            return "Keine Straßse mit diesem Namen gefunden!"
+        }
+        return true
     }
-    return true
+    return ""
 }
 
 onClickOutside(parentContainer, (event) => visible.value = false)
