@@ -1,0 +1,32 @@
+{
+    "bathroom": [
+        {
+            "name": "question-showers",
+            "text": "Hat Deine Wohnung ein  Bad/WC und Dusche/Badewanne?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": "showers-yes"
+                },
+                {
+                    "name": "Nein",
+                    "value": "showers-no"
+                }
+            ]
+        },
+        {
+            "name": "question-second-bath",
+            "text": "Hat Deine Wohnung ein zweites Bad/WC?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": "yes"
+                },
+                {
+                    "name": "Nein",
+                    "value": "nein"
+                }
+            ]
+        }
+    ]
+}

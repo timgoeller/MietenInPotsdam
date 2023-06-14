@@ -2,22 +2,15 @@
 import InputField from '../../../generic/InputField/InputField.vue'
 import RadioQuestion from '../RadioQuestion/RadioQuestion.vue';
 
-const validateField = (value) => {  
-    return 'some error';
-  };
+defineProps({
+    questions: [Object],
+})
 
-  const emit = defineEmits(['submit'])
+const emit = defineEmits(['submit'])
 </script>
 
 <template>
     <div class="flex-1 overflow-y-auto">
-        <InputField label="Frage" name="test"></InputField>
-        <RadioQuestion label="Welche sfdfd sdf?" name="bathroom-question-1" :options="[{
-            name: 'Erste Antwort',
-            value: 'answer1'
-        },{
-            name: 'Zweite Antwort',
-            value: 'answer2'
-        }]"></RadioQuestion>
+        <RadioQuestion v-for="question in questions" :label="question.text" :name="question.name" :options="question.answers"></RadioQuestion>
     </div>
 </template>

@@ -2,10 +2,13 @@
 import { ref } from 'vue'
 import BasicInformationForm from './BasicInformationForm/BasicInformationForm.vue'
 import BathroomForm from './BathroomForm/BathroomForm.vue'
+import questions from './../../../../questions.json'
 
 const formResults = ref({
   basicInformation: {}
 })
+
+console.log(questions)
 
 const currentFormPage = ref(0)
 
@@ -38,7 +41,7 @@ const prevStep = () => {
         <BasicInformationForm></BasicInformationForm>
       </template>
       <template v-if="currentFormPage == 1">
-        <BathroomForm></BathroomForm>
+        <BathroomForm :questions="questions.bathroom"></BathroomForm>
       </template>
 
       <div class="">
