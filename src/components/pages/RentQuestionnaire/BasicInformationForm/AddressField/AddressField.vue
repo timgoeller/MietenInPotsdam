@@ -28,14 +28,18 @@ const clickSuggestion = (suggestion) => {
 })
 
 const validateAddress = async (address) => {
-    if(searchTerm.value) {
+    if(address) {
         const { data, error } = await supabase
         .from('distinct_street')
         .select()
-        .textSearch('street', searchTerm.value.replace(' ', ' & '))
+        .textSearch('street', address.replace(' ', ' & '))
+
+        if(!data) {
+            return "Keine Straße mit diesem Namen gefunden!"
+        }
 
         if(data.length < 1) {
-            return "Keine Straßse mit diesem Namen gefunden!"
+            return "Keine Straße mit diesem Namen gefunden!"
         }
         return true
     }

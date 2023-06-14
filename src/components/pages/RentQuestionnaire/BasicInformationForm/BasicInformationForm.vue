@@ -6,14 +6,13 @@ const validateField = (value) => {
     return 'some error';
   };
 
-  const onSubmit = () => {
 
-  }
+  const emit = defineEmits(['submit'])
 </script>
 
 <template>
-    <Form @submit="onSubmit">
+    <div class="flex-1 overflow-y-auto">
         <AdressField></AdressField>
-        <InputField label="Test" :rules="validateField" name="test"></InputField>
-    </Form>
+        <InputField label="Hausnummer" name="test"></InputField>
+    </div>
 </template>
