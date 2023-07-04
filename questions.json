@@ -519,7 +519,7 @@
             ]
         },
         {
-            "name": "question-third-special",
+            "name": "question-fourth-special",
             "text": "Gibt es eine große natürlich belichtete Küche über 12m²?",
             "answers": [
                 {
@@ -533,7 +533,7 @@
             ]
         },
         {
-            "name": "question-fourth-special",
+            "name": "question-fifth-special",
             "text": "Ist die Einbauküche besonders hochwertig?",
             "answers": [
                 {
