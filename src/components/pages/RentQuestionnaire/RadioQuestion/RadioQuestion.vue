@@ -27,7 +27,7 @@ const validateCheckbox = async (radio) => {
             <div class="w-full flex justify-center" v-for="option, index in options" :key="option.value">
                 <Field  :id="name + index" :name="name" type="radio" :value="option.value"  class="hidden peer" :rules="validateCheckbox"/>
 
-                <label :for="name + index"  class="w-full max-w-[450px] h-auto min-h-[40px] flex items-center justify-center text-center text-xl rounded-full border border-dark-purple text-dark-purple bg-transparent peer-checked:bg-dark-purple peer-checked:text-background cursor-pointer pointer-events-none">
+                <label :for="name + index"  class="w-full max-w-[450px] h-auto min-h-[40px] flex items-center justify-center text-center text-xl rounded-full border border-dark-purple text-dark-purple bg-transparent peer-checked:bg-dark-purple peer-checked:text-background cursor-pointer">
                     {{ option.name }}
                 </label>
             </div>

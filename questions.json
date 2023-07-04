@@ -33,11 +33,7 @@
             "text": "Wie wird dein Bad beheizt?",
             "answers": [
                 {
-                    "name": "Garnicht",
-                    "value": -5
-                },
-                {
-                    "name": "Holz/-Kohleheizung",
+                    "name": "Holz/-Kohleheizung/Garnicht",
                     "value": -5
                 },
                 {
@@ -127,11 +123,7 @@
             "text": "Wie wird deine Küche beheizt?",
             "answers": [
                 {
-                    "name": "Garnicht",
-                    "value": -5
-                },
-                {
-                    "name": "Holz/-Kohleheizung",
+                    "name": "Holz/-Kohleheizung/Garnicht",
                     "value": -5
                 },
                 {
