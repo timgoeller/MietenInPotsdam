@@ -1,6 +1,5 @@
 <script setup>
 import {ref, watch} from 'vue'
-import { supabase } from '../../../../../../utils/supabase'
 import { onClickOutside } from '@vueuse/core'
 
 let searchTerm = ref()
@@ -14,7 +13,7 @@ const clickSuggestion = (suggestion) => {
   searchTerm.value = suggestion
 }
 
- watch(searchTerm, async (newTerm, oldTerm) => {
+/*  watch(searchTerm, async (newTerm, oldTerm) => {
   if(newTerm.length >= 3) {
     const { data, error } = await supabase
         .from('distinct_street')
@@ -25,7 +24,7 @@ const clickSuggestion = (suggestion) => {
   else {
     suggestions.value = [];
   }
-})
+}) */
 
 const validateAddress = async (address) => {
     if(address) {
@@ -51,13 +50,13 @@ onClickOutside(parentContainer, (event) => visible.value = false)
 
 <template>
 
-<div class="relative flex-col">
+<div class="relative flex flex-col">
     <label for="search" class="text-sm text-gray-500">
         Strasse:
     </label>
     
-    <div class="relative" ref="parentContainer">
-        <Field name="addressSearch" type="text" class="border border-black" placeholder="Type here..." v-model="searchTerm" @click="visible = true" :rules="validateAddress">
+    <div class="relative flex flex-1" ref="parentContainer">
+        <Field name="addressSearch" type="text" class="border border-black flex-1" placeholder="Type here..." v-model="searchTerm" @click="visible = true" :rules="validateAddress">
         </Field>
 
         <ul class="absolute border-black-300 border-2 bg-white z-10" v-if="visible">

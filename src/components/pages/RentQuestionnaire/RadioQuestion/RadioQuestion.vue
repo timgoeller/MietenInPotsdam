@@ -11,7 +11,7 @@ defineProps({
 })
 
 const validateCheckbox = async (radio) => {
-    if(radio) {
+    if(radio || radio == 0) {
         return true
     }
     return "Bitte wähle eine Option aus"
@@ -19,17 +19,19 @@ const validateCheckbox = async (radio) => {
 </script>
 
 <template>
-    <label :for="name" class="text-sm text-gray-500">
-        {{label}}
-    </label>
-    <div class="flex">
-        <div v-for="option in options" :key="option.value">
-            <Field  :id="option.value" :name="name" type="radio" :value="option.value"  class="hidden peer" :rules="validateCheckbox"/>
-            <label :for="option.value" class="text-sm text-gray-500 border border-red-400 peer-checked:bg-slate-300">
-                {{ option.name }}
-            </label>
-        </div>
+    <div class="flex items-center justify-center flex-col break-words text-center px-4">
+        <label :for="name" class=" text-dark-purple font-semibold text-2xl">
+            {{label}}
+        </label>
+        <div class="flex flex-col w-full gap-2 mt-4">
+            <div class="w-full flex justify-center" v-for="option, index in options" :key="option.value">
+                <Field  :id="name + index" :name="name" type="radio" :value="option.value"  class="hidden peer" :rules="validateCheckbox"/>
 
-        <ErrorMessage name="drink" />
+                <label :for="name + index"  class="w-full max-w-[450px] flex items-center justify-center h-9 text-center text-xl rounded-full border border-dark-purple text-dark-purple bg-transparent peer-checked:bg-dark-purple peer-checked:text-background cursor-pointer">
+                    {{ option.name }}
+                </label>
+            </div>
+            <ErrorMessage name="drink" />
+        </div>
     </div>
 </template>

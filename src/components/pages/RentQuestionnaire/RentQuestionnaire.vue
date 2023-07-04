@@ -1,7 +1,10 @@
 <script setup>
 import { ref } from 'vue'
 import BasicInformationForm from './BasicInformationForm/BasicInformationForm.vue'
-import BathroomForm from './BathroomForm/BathroomForm.vue'
+import BuildingAgeForm from './BuildingAgeForm/BuildingAgeForm.vue'
+import RoomForm from './RoomForm/RoomForm.vue'
+import RentResult from './RentResult/RentResult.vue'
+import FormBar from './FormBar/FormBar.vue'
 import questions from './../../../../questions.json'
 
 const formResults = ref({
@@ -14,7 +17,7 @@ const currentFormPage = ref(0)
 
 const formPages = [
   BasicInformationForm,
-  BathroomForm
+  RoomForm
 ]
 
 const onSubmit = (values) => {
@@ -24,29 +27,46 @@ const onSubmit = (values) => {
 }
 
 const prevStep = () => {
-  console.log(currentFormPage.value)
+  console.log('prev')
   currentFormPage.value -= 1;
 }
 
 </script>
 
 <template>
-
-
-
 <div class="flex justify-center h-full">
   <div class="md:my-5 md:border-black md:border-solid md:border-2 md:overflow-scroll w-full md:w-[500px]">
     <Form @submit="onSubmit" keep-values v-slot="{ handleSubmit, values }" class="flex flex-col h-full">
       <template v-if="currentFormPage == 0">
-        <BasicInformationForm></BasicInformationForm>
+        <BuildingAgeForm></BuildingAgeForm>
       </template>
       <template v-if="currentFormPage == 1">
-        <BathroomForm :questions="questions.bathroom"></BathroomForm>
+        <BasicInformationForm :formValue="values"></BasicInformationForm>
+      </template>
+      <template v-if="currentFormPage == 2">
+        <RoomForm :questions="questions.bathroom"></RoomForm>
+      </template>
+      <template v-if="currentFormPage == 3">
+        <RoomForm :questions="questions.kitchen"></RoomForm>
+      </template>
+      <template v-if="currentFormPage == 4">
+        <RoomForm :questions="questions.apartment"></RoomForm>
+      </template>
+      <template v-if="currentFormPage == 5">
+        <RoomForm :questions="questions.building"></RoomForm>
+      </template>
+      <template v-if="currentFormPage == 6">
+        <RoomForm :questions="questions.area"></RoomForm>
+      </template>
+      <template v-if="currentFormPage == 7">
+        <RoomForm :questions="questions.special"></RoomForm>
+      </template>
+      <template v-if="currentFormPage == 8">
+        <RentResult :formValue="values"></RentResult>
       </template>
 
-      <div class="">
-        <button type="submit">Weiter</button>
-        <button @click.prevent="prevStep">Zurück</button>
+      <div v-if="currentFormPage != 8">
+        <FormBar @back="prevStep" :currentPage="currentFormPage"></FormBar>
       </div>
     </Form>
   </div>

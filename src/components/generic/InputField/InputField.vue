@@ -14,15 +14,12 @@ defineProps({
 
 <template>
 
-<div class="relative flex-col">
+<div class="relative flex flex-col">
     <label for="search" class="text-sm text-gray-500">
         {{ label }}
     </label>
     
-    <div class="relative" ref="parentContainer">
-        <Field type="text" class="border border-black" :placeholder="placeholder" :rules="rules" :name="name">
-        </Field>
-    </div>
+    <Field type="text" class="border border-black" :placeholder="placeholder" :rules="rules" :name="name"></Field>
 
     <ErrorMessage :name="name" />
 </div>

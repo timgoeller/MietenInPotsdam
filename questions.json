@@ -2,29 +2,555 @@
     "bathroom": [
         {
             "name": "question-showers",
-            "text": "Hat Deine Wohnung ein  Bad/WC und Dusche/Badewanne?",
+            "text": "Hat deine Wohnung ein Bad/WC ohne Fenster?",
             "answers": [
                 {
                     "name": "Ja",
-                    "value": "showers-yes"
+                    "value": -10
                 },
                 {
                     "name": "Nein",
-                    "value": "showers-no"
+                    "value": 0
                 }
             ]
         },
         {
             "name": "question-second-bath",
-            "text": "Hat Deine Wohnung ein zweites Bad/WC?",
+            "text": "Hat deine Wohnung mindestens 1 Bad/WC mit Fenster oder Entlüftungsanlage?",
             "answers": [
                 {
                     "name": "Ja",
-                    "value": "yes"
+                    "value": 7
                 },
                 {
                     "name": "Nein",
-                    "value": "nein"
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-third-bath",
+            "text": "Wie wird dein Bad beheizt?",
+            "answers": [
+                {
+                    "name": "Garnicht",
+                    "value": -5
+                },
+                {
+                    "name": "Holz/-Kohleheizung",
+                    "value": -5
+                },
+                {
+                    "name": "Anders",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-fourth-bath",
+            "text": "Hat dein Bad moderne Ausstattung?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 6
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-fifth-bath",
+            "text": "Hat dein Bad eine Duschmöglichkeit?",
+            "answers": [
+                {
+                    "name": "Nein",
+                    "value": -5
+                },
+                {
+                    "name": "Badewanne oder Dusche",
+                    "value": 0
+                },
+                {
+                    "name": "Badewanne und Dusche",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "name": "question-sixth-bath",
+            "text": "Gibt es im Bad ein Waschbecken",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 0
+                },
+                {
+                    "name": "Nein",
+                    "value": -6
+                }
+            ]
+        },
+        {
+            "name": "question-seventh-bath",
+            "text": "Gibt es ein zweites Bad/WC",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 4
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "kitchen": [
+        {
+            "name": "question-first-kitchen",
+            "text": "Hat deine Küche Fenster oder eine Entlüftungsanlage?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 7
+                },
+                {
+                    "name": "Nein",
+                    "value": -7
+                }
+            ]
+        },
+        {
+            "name": "question-second-kitchen",
+            "text": "Wie wird deine Küche beheizt?",
+            "answers": [
+                {
+                    "name": "Garnicht",
+                    "value": -5
+                },
+                {
+                    "name": "Holz/-Kohleheizung",
+                    "value": -5
+                },
+                {
+                    "name": "Anders",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-third-kitchen",
+            "text": "Stellt dein/e Vermieter:in eine moderne Einbauküche mit Herd, Spüle und stufenregelbarem Dunstabzug?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 4
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-fourth-kitchen",
+            "text": "Könntest du in deiner Küche einen Geschirrspüler aufstellen und anschließen?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 0
+                },
+                {
+                    "name": "Nein",
+                    "value": -4
+                }
+            ]
+        },
+        {
+            "name": "question-fifth-kitchen",
+            "text": "Ist dein Bodenbelag in der Küche hochwertig und in gutem Zustand (z.B. Fliesen, hochwertiges Linoleum, hochwertiges Feuchtraumlaminat, Parkett oder Terrazzo)",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 4
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "apartment": [
+        {
+            "name": "question-first-apartment",
+            "text": "Hat deine Wohnung einen Abstellraum?",
+            "answers": [
+                {
+                    "name": "Kein Abstellraum / Keller",
+                    "value": -4
+                },
+                {
+                    "name": "Keller",
+                    "value": 0
+                },
+                {
+                    "name": "Einbauschrank / Abstellraum in der Wohnung",
+                    "value": 4
+                }
+            ]
+        },
+        {
+            "name": "question-second-apartment",
+            "text": "Wohnst du ohne Schallschutzfenster an einer besonders lärmbelasteten Straße?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 4
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-third-apartment",
+            "text": "Haben deine Fenster Außenjalousien oder Rolläden?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 6
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-fourth-apartment",
+            "text": "Gibt es in deiner Wohnung sichtbare Leitungen (Elektro und/oder Wasser)?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": -3
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-fifth-apartment",
+            "text": "Hast du einen hochwertigen Bodenbelag im guten Zustand (z.B. Teppichböden, Parkett, abgeschliffene Dielen, Laminat oder andere Beläge) oder aufwändige Decken- oder Wandverkleidung (z.B. Stuck)?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 6
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-sixth-apartment",
+            "text": "Kannst du deine Waschmaschine in Bad oder Küche stellen und anschließen?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 0
+                },
+                {
+                    "name": "Nein",
+                    "value": -3
+                }
+            ]
+        },
+        {
+            "name": "question-seventh-apartment",
+            "text": "Hast du einen Balkon, eine Loggia, eine Terasse, einen Wintergarten oder einen nur exklusiv zugänglichen Garten?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 4
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-eigth-apartment",
+            "text": "Hast du die Möglichkeit, die Wäsche außerhalb der Wohnung zu trocknen?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 0
+                },
+                {
+                    "name": "Nein",
+                    "value": -3
+                }
+            ]
+        },
+        {
+            "name": "question-ninth-apartment",
+            "text": "Ist deine Wohnung schlecht geschnitten?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": -3
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "building": [
+        {
+            "name": "question-first-building",
+            "text": "Wie gut ist das Gebäude instand gehalten?",
+            "answers": [
+                {
+                    "name": "Schlecht",
+                    "value": -5
+                },
+                {
+                    "name": "Normal",
+                    "value": 0
+                },
+                {
+                    "name": "Gut",
+                    "value": 4
+                }
+            ]
+        },
+        {
+            "name": "question-second-building",
+            "text": "Ist das Treppenhaus stark renovierungsbedürftig?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": -5
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-third-building",
+            "text": "Hat dein Wohngebäude weniger als 6 Obergeschosse und einen Personenaufzug?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 7
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-fourth-building",
+            "text": "Gibt es eine Gegensprechanlage?",
+            "answers": [
+                {
+                    "name": "Ja, mit Videokontakt",
+                    "value": 4
+                },
+                {
+                    "name": "Ja",
+                    "value": 0
+                },
+                {
+                    "name": "Nein",
+                    "value": -5
+                }
+            ]
+        },
+        {
+            "name": "question-fifth-building",
+            "text": "Wie ist der Fahrradstellplatz gestaltet?",
+            "answers": [
+                {
+                    "name": "Abschließbar und leicht zugänglich",
+                    "value": 5
+                },
+                {
+                    "name": "Vorhanden",
+                    "value": 0
+                },
+                {
+                    "name": "Nicht vorhanden",
+                    "value": -5
+                }
+            ]
+        }
+    ],
+    "area": [
+        {
+            "name": "question-first-area",
+            "text": "Wie ist dein Wohnumfeld?",
+            "answers": [
+                {
+                    "name": "Stark vernachlässigt",
+                    "value": -7
+                },
+                {
+                    "name": "Normal",
+                    "value": 0
+                },
+                {
+                    "name": "Aufwändig gestaltet",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "name": "question-second-area",
+            "text": "Ist dein Wohnumfeld regelmäßig erheblich durch Geräusche und Gerüche beeinträchtigt?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": -6
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-third-area",
+            "text": "Ist die Lage der Wohnung gut? (Wasserlage/Hanglage/Historisch)",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 6
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-fourth-area",
+            "text": "Gibt es in einem Kilometer Umkreis Versorgung für den täglichen Bedarf",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 6
+                },
+                {
+                    "name": "Nein",
+                    "value": -6
+                }
+            ]
+        },
+        {
+            "name": "question-fifth-area",
+            "text": "Gibt es in einem Kilometer Umkreis Anbindung an den öffentlichen Nahverkehr?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 6
+                },
+                {
+                    "name": "Nein",
+                    "value": -6
+                }
+            ]
+        }
+    ],
+    "special": [
+        {
+            "name": "question-first-special",
+            "text": "Wie viele der Folgenden sind in schlechtem Zustand: Fußboden, Zimmertüren/Fenster, Decken/Wände, Santitäranlagen",
+            "answers": [
+                {
+                    "name": "Eins",
+                    "value": -6
+                },
+                {
+                    "name": "Zwei",
+                    "value": -12
+                },
+                {
+                    "name": "Drei",
+                    "value": -18
+                },
+                {
+                    "name": "Alle",
+                    "value": -24
+                }
+            ]
+        },
+        {
+            "name": "question-second-special",
+            "text": "Gehört zur Wohnung ein PKW-Stellplatz?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 4
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-third-special",
+            "text": "Ist die Wohnung barrierearm gestaltet?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 9
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-third-special",
+            "text": "Gibt es eine große natürlich belichtete Küche über 12m²?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 9
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "name": "question-fourth-special",
+            "text": "Ist die Einbauküche besonders hochwertig?",
+            "answers": [
+                {
+                    "name": "Ja",
+                    "value": 4
+                },
+                {
+                    "name": "Nein",
+                    "value": 0
                 }
             ]
         }

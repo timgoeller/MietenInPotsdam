@@ -1,0 +1,342 @@
+{
+    "45": {
+        "1948": {
+            "non-sanitized": {
+                "min": 5.55,
+                "max": 8.40,
+                "base": 6.89
+            },
+            "fully-sanitized": {
+                "min": 5.95,
+                "max": 10.23,
+                "base": 7.79
+            },
+            "non-sanitized-enev": {
+                "min": 8.30,
+                "max": 11.50,
+                "base": 9.56
+            }
+        },
+        "1949-1970": {
+            "non-sanitized": {
+                "min": 5.91,
+                "max": 8.48,
+                "base": 7.37
+            },
+            "fully-sanitized": {
+                "min": 0,
+                "max": 0,
+                "base": 0
+            },
+            "non-sanitized-enev": {
+                "min": 6.67,
+                "max": 8.90,
+                "base": 8.12
+            }
+        },
+        "1971-1990": {
+            "non-sanitized": {
+                "min": 5.32,
+                "max": 8.64,
+                "base": 6.67
+            },
+            "fully-sanitized": {
+                "min": 5.55,
+                "max": 7.04,
+                "base": 6.45
+            },
+            "non-sanitized-enev": {
+                "min": 5.99,
+                "max": 8.20,
+                "base": 7.13
+            }
+        },
+        "1991-2008": {
+            "min": 7.86,
+            "max": 9.37,
+            "base": 8.58
+        },
+        "2009-2012": {
+            "min": 10.58,
+            "max": 11.38,
+            "base": 10.82
+        },
+        "2013": {
+            "min": 10.64,
+            "max": 11.88,
+            "base": 11.25
+        }
+    },
+    "45-60": {
+        "1948": {
+            "non-sanitized": {
+                "min": 5.76,
+                "max": 8.34,
+                "base": 7.07
+            },
+            "fully-sanitized": {
+                "min": 5.76,
+                "max": 9.94,
+                "base": 7.61
+            },
+            "non-sanitized-enev": {
+                "min": 7.14,
+                "max": 10.64,
+                "base": 9.14
+            }
+        },
+        "1949-1970": {
+            "non-sanitized": {
+                "min": 4.96,
+                "max": 6.52,
+                "base": 5.87
+            },
+            "fully-sanitized": {
+                "min": 5.47,
+                "max": 7.43,
+                "base": 6.30
+            },
+            "non-sanitized-enev": {
+                "min": 5.40,
+                "max": 7.02,
+                "base": 6.21
+            }
+        },
+        "1971-1990": {
+            "non-sanitized": {
+                "min": 5.06,
+                "max": 6.61,
+                "base": 5.70
+            },
+            "fully-sanitized": {
+                "min": 5.17,
+                "max": 6.13,
+                "base": 5.73
+            },
+            "non-sanitized-enev": {
+                "min": 5.38,
+                "max": 7.06,
+                "base": 6.30
+            }
+        },
+        "1991-2008": {
+            "min": 7.86,
+            "max": 9.40,
+            "base": 8.46
+        },
+        "2009-2012": {
+            "min": 10.47,
+            "max": 10.75,
+            "base": 10.65
+        },
+        "2013": {
+            "min": 10.06,
+            "max": 11.54,
+            "base": 10.77
+        }
+    },
+    "60-75": {
+        "1948": {
+            "non-sanitized": {
+                "min": 4.25,
+                "max": 8.21,
+                "base": 6.61
+            },
+            "fully-sanitized": {
+                "min": 5.66,
+                "max": 10.00,
+                "base": 7.92
+            },
+            "non-sanitized-enev": {
+                "min": 7.49,
+                "max": 10.18,
+                "base": 8.88
+            }
+        },
+        "1949-1970": {
+            "non-sanitized": {
+                "min": 4.86,
+                "max": 6.40,
+                "base": 5.63
+            },
+            "fully-sanitized": {
+                "min": 5.38,
+                "max": 6.59,
+                "base": 6.14
+            },
+            "non-sanitized-enev": {
+                "min": 6.00,
+                "max": 6.89,
+                "base": 6.34
+            }
+        },
+        "1971-1990": {
+            "non-sanitized": {
+                "min": 4.58,
+                "max": 5.75,
+                "base": 5.17
+            },
+            "fully-sanitized": {
+                "min": 5.20,
+                "max": 5.71,
+                "base": 5.40
+            },
+            "non-sanitized-enev": {
+                "min": 5.25,
+                "max": 5.71,
+                "base": 5.82
+            }
+        },
+        "1991-2008": {
+            "min": 7.55,
+            "max": 9.35,
+            "base": 8.18
+        },
+        "2009-2012": {
+            "min": 9.49,
+            "max": 10.80,
+            "base": 10.52
+        },
+        "2013": {
+            "min": 10.15,
+            "max": 11.80,
+            "base": 10.85
+        }
+    },
+    "75-90": {
+        "1948": {
+            "non-sanitized": {
+                "min": 4.60,
+                "max": 8.21,
+                "base": 6.78
+            },
+            "fully-sanitized": {
+                "min": 5.66,
+                "max": 13.03,
+                "base": 8.52
+            },
+            "non-sanitized-enev": {
+                "min": 7.00,
+                "max": 10.32,
+                "base": 8.62
+            }
+        },
+        "1949-1970": {
+            "non-sanitized": {
+                "min": 5.31,
+                "max": 6.71,
+                "base": 6.01
+            },
+            "fully-sanitized": {
+                "min": 6.09,
+                "max": 6.64,
+                "base": 6.47
+            },
+            "non-sanitized-enev": {
+                "min": 6.00,
+                "max": 8.00,
+                "base": 6.67
+            }
+        },
+        "1971-1990": {
+            "non-sanitized": {
+                "min": 4.52,
+                "max": 5.70,
+                "base": 5.11
+            },
+            "fully-sanitized": {
+                "min": 4.81,
+                "max": 5.64,
+                "base": 5.38
+            },
+            "non-sanitized-enev": {
+                "min": 5.10,
+                "max": 6.20,
+                "base": 5.67
+            }
+        },
+        "1991-2008": {
+            "min": 7.74,
+            "max": 9.25,
+            "base": 8.17
+        },
+        "2009-2012": {
+            "min": 9.50,
+            "max": 11.53,
+            "base": 10.44
+        },
+        "2013": {
+            "min": 10.01,
+            "max": 12.00,
+            "base": 10.95
+        }
+    },
+    "90": {
+        "1948": {
+            "non-sanitized": {
+                "min": 5.01,
+                "max": 8.42,
+                "base": 6.97
+            },
+            "fully-sanitized": {
+                "min": 6.50,
+                "max": 10.38,
+                "base": 8.33
+            },
+            "non-sanitized-enev": {
+                "min": 7.43,
+                "max": 10.80,
+                "base": 8.99
+            }
+        },
+        "1949-1970": {
+            "non-sanitized": {
+                "min": 5.10,
+                "max": 6.70,
+                "base": 6.06
+            },
+            "fully-sanitized": {
+                "min": 0,
+                "max": 0,
+                "base": 0
+            },
+            "non-sanitized-enev": {
+                "min": 0,
+                "max": 0,
+                "base": 0
+            }
+        },
+        "1971-1990": {
+            "non-sanitized": {
+                "min": 4.95,
+                "max": 5.68,
+                "base": 5.26
+            },
+            "fully-sanitized": {
+                "min": 0,
+                "max": 0,
+                "base": 0
+            },
+            "non-sanitized-enev": {
+                "min": 5.01,
+                "max": 8.50,
+                "base": 6.25
+            }
+        },
+        "1991-2008": {
+            "min": 7.72,
+            "max": 9.35,
+            "base": 8.21
+        },
+        "2009-2012": {
+            "min": 8.96,
+            "max": 12.25,
+            "base": 10.69
+        },
+        "2013": {
+            "min": 9.42,
+            "max": 12.20,
+            "base": 11.00
+        }
+    }
+}

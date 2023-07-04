@@ -10,7 +10,6 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.22.0",
     "@vueuse/core": "^10.1.2",
     "vee-validate": "^4.9.5",
     "vue": "^3.2.45",
