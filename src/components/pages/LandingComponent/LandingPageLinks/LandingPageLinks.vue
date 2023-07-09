@@ -6,7 +6,6 @@ console.log('hello script setup')
   <div class="flex flex-col items-center justify-end gap-4 h-full pb-6">
 
     <div class="pb-12">
-        <span class="text-light-blue font-semibold text-xl pb-4">Schau selbst</span>
         <router-link to="/mietspiegel">
             <div class="mt-2 w-64 flex items-center justify-center h-12 text-center text-3xl rounded-2xl border bg-light-blue text-background">
                 Mietrechner
