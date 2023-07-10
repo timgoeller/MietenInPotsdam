@@ -16,17 +16,22 @@ console.log('hello script setup')
     <div>
         <span class="text-light-blue font-semibold text-xl">Neugierig geworden?</span>
         <div class="flex gap-4 flex-col mt-2">
-            <router-link to="/">
+            <router-link to="/map">
                 <div class="w-64 flex items-center justify-center h-9 text-center text-xl rounded-full border bg-light-blue text-background">
                     Karte
                 </div>
             </router-link>
-            <router-link to="/">
+            <router-link to="/forum">
                 <div class="w-64 flex items-center justify-center h-9 text-center text-xl rounded-full border bg-light-blue text-background">
-                    FAQ
+                    Forum
                 </div>
             </router-link>
-            <router-link to="/">
+            <router-link to="/rights">
+                <div class="w-64 flex items-center justify-center h-9 text-center text-xl rounded-full border bg-light-blue text-background">
+                    Deine Rechte
+                </div>
+            </router-link>
+            <router-link to="/about_us">
                 <div class="w-64 flex items-center justify-center h-9 text-center text-xl rounded-full border bg-light-blue text-background">
                     Unsere Idee
                 </div>

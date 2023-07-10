@@ -15,9 +15,11 @@ defineProps({
             <span class="text-background" v-if="currentPage != 0">
                 ➤
             </span>
-            <span class="text-background text-5xl block h-1 overflow-hidden pb-14" v-else>
-                ×
-            </span>
+            <router-link to="/#" v-else>
+                <span class="text-background text-5xl block h-1 overflow-hidden pb-14">
+                    ×
+                </span>
+            </router-link>
         </button>
         <div class="flex justify-center items-center flex-1 gap-2  border-l-background border-l">
             <div v-for="index in 8" class="w-5 h-3 bg-background rounded-lg border" :class="{ 'opacity-50': index - 1 != currentPage}">
