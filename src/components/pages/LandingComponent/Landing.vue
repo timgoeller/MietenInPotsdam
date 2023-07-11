@@ -1,7 +1,7 @@
 <script setup>
 import LandingPageLinks from './LandingPageLinks/LandingPageLinks.vue';
-import bottomImg from '../../../assets/Quadratmieter Leistengrafik blau Desktop.png'
-import bottomImgMobile from '../../../assets/Quadratmieter Leistengrafik blau Mobil.png'
+import bottomImg from '../../../assets/Quadratmieter Leistengrafik blau-09.svg'
+import bottomImgMobile from '../../../assets/Quadratmieter Leistengrafik blau-10.svg'
 </script>
 
 <template>
