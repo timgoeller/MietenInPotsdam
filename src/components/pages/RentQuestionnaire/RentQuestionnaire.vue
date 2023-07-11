@@ -31,6 +31,7 @@ const prevStep = () => {
   currentFormPage.value -= 1;
 }
 
+
 </script>
 
 <template>
@@ -41,7 +42,7 @@ const prevStep = () => {
         <BuildingAgeForm></BuildingAgeForm>
       </template>
       <template v-if="currentFormPage == 1">
-        <BasicInformationForm :formValue="values"></BasicInformationForm>
+        <BasicInformationForm :formValue="values" valid=""></BasicInformationForm>
       </template>
       <template v-if="currentFormPage == 2">
         <RoomForm :questions="questions.bathroom"></RoomForm>

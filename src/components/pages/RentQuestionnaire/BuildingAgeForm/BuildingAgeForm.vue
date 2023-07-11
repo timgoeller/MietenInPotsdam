@@ -1,12 +1,19 @@
 <script setup>
 import RadioQuestion from '../RadioQuestion/RadioQuestion.vue';
 import {computed} from 'vue'
+import { useIsFormDirty, useIsFormValid } from "vee-validate";
 
 const props = defineProps({
     formValue: Object,
+    valid: Boolean,
 })
+  
+const isDirty = useIsFormDirty();
+const isValid = useIsFormValid();
 
-console.log(props.formValue)
+const isDisabled = computed(() => {
+return !isDirty.value || !isValid.value;
+});
 
 const showSanitized = computed(() => {
     if(['1948', '1949-1970', '1971-1990'].includes(props.formValue["building-age"])) {
@@ -52,7 +59,7 @@ const emit = defineEmits(['submit'])
                 }
             ]"></RadioQuestion>
             <div class="w-full flex justify-center mt-8 px-4">
-                <button type="submit" class="mt-2 w-full max-w-[450px] flex items-center justify-center h-12 text-center text-3xl rounded-2xl border bg-light-blue text-background">
+                <button type="submit" class="mt-2 w-full max-w-[450px] flex items-center justify-center h-12 text-center text-3xl rounded-2xl border bg-light-blue text-background" :class="{'opacity-30' : isDisabled}">
                     Weiter
                 </button>
             </div>

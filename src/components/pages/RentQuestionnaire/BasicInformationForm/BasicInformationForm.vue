@@ -1,10 +1,11 @@
 <script setup>
 import RadioQuestion from '../RadioQuestion/RadioQuestion.vue';
-import Dropdown from '../../../generic/Dropdown/Dropdown.vue'
+import { useIsFormDirty, useIsFormValid } from "vee-validate";
 import {computed} from 'vue'
 
 const props = defineProps({
     formValue: Object,
+    valid: Boolean,
 })
 
 console.log(props.formValue)
@@ -17,10 +18,17 @@ const showSanitized = computed(() => {
 })
 
 const emit = defineEmits(['submit'])
+  
+const isDirty = useIsFormDirty();
+const isValid = useIsFormValid();
+
+const isDisabled = computed(() => {
+return !isDirty.value || !isValid.value;
+});
 </script>
 
 <template>
-    <div class="flex-1 overflow-y-auto">
+    <div class="flex-1 overflow-y-auto py-8">
         <div class="px-8">
             <RadioQuestion label="Wohnfläche" name="flat-size" :options="[
                  {
@@ -59,7 +67,7 @@ const emit = defineEmits(['submit'])
                 },
             ]"></RadioQuestion>
             <div class="w-full flex justify-center mt-8 px-4">
-                <button type="submit" class="mt-2 w-full max-w-[450px] flex items-center justify-center h-12 text-center text-3xl rounded-2xl border bg-light-blue text-background">
+                <button type="submit" class="mt-2 w-full max-w-[450px] flex items-center justify-center h-12 text-center text-3xl rounded-2xl border bg-light-blue text-background" :class="{'opacity-30' : isDisabled}">
                     Weiter
                 </button>
             </div>
