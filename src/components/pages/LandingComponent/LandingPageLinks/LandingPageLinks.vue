@@ -3,7 +3,7 @@ console.log('hello script setup')
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-end gap-4 h-full pb-6">
+  <div class="flex flex-col items-center justify-center gap-4 h-full pb-6">
 
     <div class="pb-4">
         <router-link to="/mietspiegel">
