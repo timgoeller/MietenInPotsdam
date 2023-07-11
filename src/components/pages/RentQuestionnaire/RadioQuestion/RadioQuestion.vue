@@ -7,6 +7,10 @@ defineProps({
         type: String,
         default: 'name'
     },
+    explanation: {
+        type: String,
+        optional: true,
+    },
     options: [Object],
 })
 
@@ -22,6 +26,7 @@ const validateCheckbox = async (radio) => {
     <div class="flex items-center justify-center flex-col break-words text-center px-4">
         <label :for="name" class=" text-dark-purple font-semibold text-2xl">
             {{label}}
+            <span class="text-sm block font-normal">{{ explanation }}</span>
         </label>
         <div class="flex flex-col w-full gap-2 mt-4">
             <div class="w-full flex justify-center" v-for="option, index in options" :key="option.value">
