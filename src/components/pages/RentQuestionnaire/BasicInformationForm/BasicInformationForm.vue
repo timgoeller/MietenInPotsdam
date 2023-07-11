@@ -8,8 +8,6 @@ const props = defineProps({
     valid: Boolean,
 })
 
-console.log(props.formValue)
-
 const showSanitized = computed(() => {
     if(['1948', '1949-1970', '1971-1990'].includes(props.formValue["building-age"])) {
         return true
