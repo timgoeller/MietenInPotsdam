@@ -1,5 +1,5 @@
 <script setup>
-
+import usImg from '../../../assets/wir.png'
 </script>
 
 <template>
@@ -16,6 +16,7 @@
                 <p>Potsdam ist eine attraktive Stadt, die einen enormen Bedarf an Wohnraum und mit einer herausfordernden Mietlage zu kämpfen hat. Das führt zu einer angespannten Situation: hohe Mietpreise, ein Mangel an bezahlbarem Wohnraum und begrenzte Zugangsmöglichkeiten zu aktuellen Informationen über Mietpreise und Mietmarkt. Bei einer genaueren Auseinandersetzung mit den individuellen und lokalen Mietverhältnissen, wird man förmlich von den Ergebnissen überrollt: unübersichtliche Rechtsprechungen, undurchsichtige Mietspiegeltabellen und aufdringliche Schlagzeilen. Genau dieser Ohnmacht wollen wir mit dieser Website entgegenwirken.</p>
                 <p>Gemeinsam können wir alle einen kleinen Beitrag leisten, um gesellschaftlichen Einfluss auf Mietbedingungen und -preise auszuüben. Die Website quadratmieter soll dazu beitragen, dass Mieter:innen aktiv Entscheidungen treffen können und resultierend eine stärkere Verhandlungsposition einnehmen. Gleichzeitig soll eine Gemeinschaft aufgebaut und Daten gesammelt werden, die zur Verbesserung des Wohnungsmarkts beitragen - und das schneller, einfacher, transparenter und koordinierter als bisher. </p>
             </div>
+            <img :src="usImg" class="w-[400px]">
         </div>
     </div>
 </template>
