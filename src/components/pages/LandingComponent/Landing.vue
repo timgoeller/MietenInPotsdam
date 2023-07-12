@@ -7,8 +7,8 @@ import bottomImgMobile from '../../../assets/Quadratmieter Leistengrafik blau-10
 <template>
     <div class="flex flex-col h-full">
         <p class="text-light-blue text-4xl sm:text-5xl font-extrabold text-center mt-6 mx-8">Hallo!</p>
-        <p class="text-light-blue sm:text-md text-sm font-semibold text-center mt-6  mx-8">Schön, dass deine Miete Dich nicht kalt lässt.<br>
-Hier kannst du deine Miete mit dem lokalen Mietspiegel in Potsdam vergleichen - schnell, einfach und transparent. <br>Wir freuen uns, dass du hergefunden hast.</p>
+        <p class="text-light-blue sm:text-md text-sm font-semibold text-center mt-6  mx-8">Schön, dass Deine Miete Dich nicht kalt lässt.<br>
+Hier kannst Du Deine Miete mit dem lokalen Mietspiegel in Potsdam vergleichen - schnell, einfach und transparent. <br>Wir freuen uns, dass Du hergefunden hast.</p>
         <div class="flex-1 mx-8">
             <LandingPageLinks></LandingPageLinks>
         </div>
