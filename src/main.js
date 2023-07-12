@@ -27,7 +27,7 @@ history: createWebHashHistory(),
 routes, // short for `routes: routes`
 })
 
-app = createApp(App)
+const vueApp = createApp(App)
 
 const i18n = createI18n({
   messages: translations,
@@ -35,11 +35,11 @@ const i18n = createI18n({
   legacy: false,
 })
 
-app.component('Form', Form)
-app.component('Field', Field)
-app.component('ErrorMessage', ErrorMessage)
+vueApp.component('Form', Form)
+vueApp.component('Field', Field)
+vueApp.component('ErrorMessage', ErrorMessage)
 
-app.use(router)
-app.use(i18n)
+vueApp.use(router)
+vueApp.use(i18n)
 
-app.mount('#app')
+vueApp.mount('#app')

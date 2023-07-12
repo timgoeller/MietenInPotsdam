@@ -13,8 +13,8 @@ console.log('hello script setup')
         </router-link>
     </div>
 
-    <div>
-        <span class="text-light-blue font-semibold text-xl">Neugierig geworden?</span>
+    <div class="flex flex-col justify-center">
+        <span class="text-light-blue font-semibold text-xl text-center">Neugierig geworden?</span>
         <div class="flex gap-4 flex-col mt-2">
             <router-link to="/map">
                 <div class="w-64 flex items-center justify-center h-9 text-center text-xl rounded-full border bg-light-blue text-background">
