@@ -1,0 +1,12 @@
+{
+    "de": {
+      "texts": {
+        "forum": "<p>Perspektivisch soll hier eine interaktive Karte entstehen, welche die berechneten Ergebnisse der Mietspiegelabfrage veranschaulicht. Ziel des Tool ist es, dass die Nutzer:innen ihren Mietpreis mit der ortsüblichen Vergleichsmiete visuell vergleichen können. Wie hoch sind die Mietpreise anderer in meiner Straße, meinem Kiez oder im Bezirk zum Mietspiegel? Und befindet sich der Mietpreis meiner Wohnung im Potsdamer Mietspiegel?</p><p>Wir wollen die User:innen somit dazu anregen, sich bewusst(er) mit der aktuellen Situation und Entwicklung des Potsdamer Mietmarkts sowie mit einflussnehmenden Faktoren auseinanderzusetzen. Des Weiteren soll auf Vereine, Verbände oder Initiativen verwiesen werden, die sich für die Interessen von Mieter:innen stark machen. Resultierend wollen wir die Mieter:innen dazu empowern, sich bei zu stark abweichenden Berechnungen eine rechtliche Beratung aufzusuchen bzw. diese aktiv in Anspruch zu nehmen.</p>"
+      }
+    },
+    "de_easy": {
+      "texts": {
+        "forum": "<p>Hier entsteht ein Forum. Der Austausch von persönlichen Erfahrungen und Informationen steht im Mittelpunkt. Es werden Fragen gestellt. Es werden Tipps geteilt. Das Ziel ist, eine aktive Gemeinschaft zu schaffen. Mieterinnen und Mieter werden gestärkt. Die Menschen sollen mehr Einfluss auf ihre Wohnsituation haben.</p>"
+      }
+    }
+  }

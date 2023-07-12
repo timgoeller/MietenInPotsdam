@@ -1,5 +1,13 @@
 <script setup>
+import { useI18n } from "vue-i18n";
+const { locale } = useI18n();
 
+const switchLocale = () => {
+    if(locale.value == "de_easy")
+        locale.value = "de"
+    else
+        locale.value = "de_easy"
+}
 </script>
 
 <template>
@@ -10,10 +18,11 @@
                     ×
                 </span>
             </router-link>
+            <span class="text-light-blue text-3xl block h-1 overflow-hidden pb-10 absolute right-0 mt-4" @click="switchLocale">
+                ?
+            </span>
             <h2 class="text-3xl  font-semibold">Forum</h2>
-            <div class="flex flex-col h-full gap-4 text-justify">
-                <p>„Gemeinsam ist man weniger allein“</p>
-                <p>An dieser Stelle soll den Mieter:innen ein Forum zur Verfügung stehen, das Raum für einen Austausch von individuellen Erfahrungen und Informationen bietet. Im Rahmen des Community-Bereichs können Fragen gestellt und Informationen sowie Tipps untereinander geteilt werden. Die Website will eine aktive Gemeinschaft von Menschen fördern, die von Mietproblemen betroffen sind oder sich für bezahlbaren Wohnraum in Potsdam einsetzen. Das daraus entstehende Gemeinschaftsgefühl soll Mieter:innen in ihrer Handlungsmacht bestärken und ihnen eine bedeutendere Stimme in der Gestaltung von Wohn- und Mietthemen geben.</p>
+            <div class="flex flex-col h-full gap-4 text-justify" v-html="$t('texts.forum')">
             </div>
         </div>
     </div>

@@ -45,6 +45,7 @@
         {
             "name": "question-fourth-bath",
             "text": "Hat dein Bad moderne Ausstattung?",
+            "explanation": "z.B. Handtuchheizkörper oder ein WC, was an der Wand hängt.",
             "answers": [
                 {
                     "name": "Ja",
@@ -135,6 +136,7 @@
         {
             "name": "question-third-kitchen",
             "text": "Stellt dein/e Vermieter:in eine moderne Einbauküche mit Herd, Spüle und stufenregelbarem Dunstabzug?",
+            "explanation": "Nicht älter als zehn Jahre und/oder in gutem Zustand",
             "answers": [
                 {
                     "name": "Ja",
@@ -162,7 +164,8 @@
         },
         {
             "name": "question-fifth-kitchen",
-            "text": "Ist dein Bodenbelag in der Küche hochwertig und in gutem Zustand (z.B. Fliesen, hochwertiges Linoleum, hochwertiges Feuchtraumlaminat, Parkett oder Terrazzo)",
+            "text": "Ist dein Bodenbelag in der Küche hochwertig und in gutem Zustand?",
+            "explanation": "z.B. Fliesen, hochwertiges Linoleum, hochwertiges Feuchtraumlaminat, Parkett oder Terrazzo",
             "answers": [
                 {
                     "name": "Ja",
@@ -238,7 +241,8 @@
         },
         {
             "name": "question-fifth-apartment",
-            "text": "Hast du einen hochwertigen Bodenbelag im guten Zustand (z.B. Teppichböden, Parkett, abgeschliffene Dielen, Laminat oder andere Beläge) oder aufwändige Decken- oder Wandverkleidung (z.B. Stuck)?",
+            "text": "Hast du einen hochwertigen Bodenbelag oder aufwändige Decken- oder Wandverkleidung im guten Zustand?",
+            "explanation": "z.B. Teppichböden, Parkett, abgeschliffene Dielen, Laminat oder andere Beläge, oder z.B. Stuck", 
             "answers": [
                 {
                     "name": "Ja",
@@ -295,6 +299,7 @@
         {
             "name": "question-ninth-apartment",
             "text": "Ist deine Wohnung schlecht geschnitten?",
+            "explanation": "z.B. mit Durchgangszimmer",
             "answers": [
                 {
                     "name": "Ja",
@@ -311,6 +316,7 @@
         {
             "name": "question-first-building",
             "text": "Wie gut ist das Gebäude instand gehalten?",
+            "explanation": "Schlecht: z.B. große Schäden am Putz oder an den Fugen, erhebliche Schäden an der Dachabdeckung, ständig feuchtes Mauerwerk", 
             "answers": [
                 {
                     "name": "Schlecht",
@@ -329,6 +335,7 @@
         {
             "name": "question-second-building",
             "text": "Ist das Treppenhaus stark renovierungsbedürftig?",
+            "explanation": "z.B. Sicherheitsbedenken durch Schäden an Stufen/Geländer oder optisch verwahrloster Eindruck",
             "answers": [
                 {
                     "name": "Ja",
@@ -374,15 +381,12 @@
         },
         {
             "name": "question-fifth-building",
-            "text": "Wie ist der Fahrradstellplatz gestaltet?",
+            "text": "Gibt es einen Fahrradstellplatz?",
+            "explanation": "abschließbarer Raum im Gebäude oder Anschließmöglichkeiten auf dem Gelände", 
             "answers": [
                 {
-                    "name": "Abschließbar und leicht zugänglich",
+                    "name": "vorhanden",
                     "value": 5
-                },
-                {
-                    "name": "Vorhanden",
-                    "value": 0
                 },
                 {
                     "name": "Nicht vorhanden",
@@ -395,6 +399,7 @@
         {
             "name": "question-first-area",
             "text": "Wie ist dein Wohnumfeld?",
+            "explanation": "Aufwändig: z.B. Knderspielplatz, Sitzbänke oder gepflegte Wege und Grünanlagen",
             "answers": [
                 {
                     "name": "Stark vernachlässigt",
@@ -426,7 +431,8 @@
         },
         {
             "name": "question-third-area",
-            "text": "Ist die Lage der Wohnung gut? (Wasserlage/Hanglage/Historisch)",
+            "text": "Ist die Lage der Wohnung gut?",
+            "explanation": "z.B. Altstadt oder Bauten aus der Zeit vor dem zweiten Welktkrieg, Lage am Wasser, am Hang oder besonders ruhig",
             "answers": [
                 {
                     "name": "Ja",
@@ -470,7 +476,7 @@
     "special": [
         {
             "name": "question-first-special",
-            "text": "Wie viele der Folgenden sind in schlechtem Zustand: Fußboden, Zimmertüren/Fenster, Decken/Wände, Santitäranlagen",
+            "text": "Unabhängig vom Alter, wie viele der Folgenden sind in schlechtem Zustand: Fußboden, Zimmertüren/Fenster, Decken/Wände, Santitäranlagen",
             "answers": [
                 {
                     "name": "Eins",
@@ -507,6 +513,7 @@
         {
             "name": "question-third-special",
             "text": "Ist die Wohnung barrierearm gestaltet?",
+            "explanation": "z.B. ohne merkbaren Türschwellen und genügend Platz im Bad",
             "answers": [
                 {
                     "name": "Ja",
