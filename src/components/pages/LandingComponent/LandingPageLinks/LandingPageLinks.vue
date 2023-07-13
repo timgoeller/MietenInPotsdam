@@ -28,7 +28,7 @@ console.log('hello script setup')
             </router-link>
             <router-link to="/rights">
                 <div class="w-64 flex items-center justify-center h-9 text-center text-xl rounded-full border bg-light-blue text-background">
-                    Deine Rechte
+                    Anlaufstellen
                 </div>
             </router-link>
             <router-link to="/about_us">
