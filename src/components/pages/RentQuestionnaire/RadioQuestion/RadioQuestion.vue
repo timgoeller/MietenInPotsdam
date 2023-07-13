@@ -24,7 +24,7 @@ const validateCheckbox = async (radio) => {
 
 <template>
     <div class="flex items-center justify-center flex-col break-words text-center px-4">
-        <label :for="name" class=" text-dark-purple font-semibold text-2xl">
+        <label :for="name" class=" text-dark-purple font-semibold text-2xl max-w-[600px]">
             {{label}}
             <span class="text-sm block font-normal">{{ explanation }}</span>
         </label>

@@ -36,7 +36,7 @@ const prevStep = () => {
 
 <template>
 <div class="flex justify-center h-full">
-  <div class="md:my-5 md:border-black md:border-solid md:border-2 md:overflow-scroll w-full md:w-[500px]">
+  <div class="w-full">
     <Form @submit="onSubmit" keep-values v-slot="{ handleSubmit, values }" class="flex flex-col h-full">
       <template v-if="currentFormPage == 0">
         <BuildingAgeForm></BuildingAgeForm>
