@@ -39,7 +39,7 @@ const rent = computed(() => {
             <p class="text-light-blue text-2xl font-semibold text-center mt-6">Du zahlst über 20% mehr, also {{ (rent * 1.2).toFixed(2) }}€/m²? Dann könnte es sich lohnen, gegen deine Miete vorzugehen!</p>
             <div class="flex-1 flex flex-col justify-end items-center pb-8">
                 <router-link to="/rights">
-                    <div class="mt-2 w-full max-w-[450px] min-w-[256px] flex items-center justify-center h-12 text-center text-3xl rounded-2xl border bg-light-blue text-background">
+                    <div class="mt-2 w-full max-w-[450px] min-w-[256px] flex items-center justify-center h-12 text-center text-2xl rounded-2xl border bg-light-blue text-background">
                         Was nun?
                     </div>
                 </router-link>

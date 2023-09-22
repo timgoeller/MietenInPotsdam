@@ -67,7 +67,7 @@ return !isDirty.value || !isValid.value;
             explanation="Vollsaniert (mindestens drei von vier Punkten): neue Fenster, modernisiertes Bad, moderne Öl oder Gasheizung, modernisierte Elektrik in Haus und Wohnung"
             ></RadioQuestion>
             <div class="w-full flex justify-center mt-8 px-4">
-                <button type="submit" class="mt-2 w-full max-w-[450px] flex items-center justify-center h-12 text-center text-3xl rounded-2xl border bg-light-blue text-background" :class="{'opacity-30' : isDisabled}">
+                <button type="submit" class="mt-2 w-full max-w-[450px] flex items-center justify-center h-12 text-center text-2xl rounded-2xl border bg-light-blue text-background" :class="{'opacity-30' : isDisabled}">
                     Weiter
                 </button>
             </div>

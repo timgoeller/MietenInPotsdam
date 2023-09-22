@@ -45,22 +45,43 @@ const prevStep = () => {
         <BasicInformationForm :formValue="values" valid=""></BasicInformationForm>
       </template>
       <template v-if="currentFormPage == 2">
-        <RoomForm :questions="questions.bathroom"></RoomForm>
+        <RoomForm 
+          :questions="questions.bathroom"
+          heading="Badezimmer"
+          description="Fragen zu den Merkmalen des Badezimmers"
+        ></RoomForm>
       </template>
       <template v-if="currentFormPage == 3">
-        <RoomForm :questions="questions.kitchen"></RoomForm>
+        <RoomForm
+          :questions="questions.kitchen"
+          heading="Küche"
+          description="Fragen zu den Merkmalen der Küche"></RoomForm>
       </template>
       <template v-if="currentFormPage == 4">
-        <RoomForm :questions="questions.apartment"></RoomForm>
+        <RoomForm 
+          :questions="questions.apartment"
+          heading="Wohnung"
+          description="Generelle Fragen zu den Eigenschaften der Wohnung">
+        </RoomForm>
       </template>
       <template v-if="currentFormPage == 5">
-        <RoomForm :questions="questions.building"></RoomForm>
+        <RoomForm 
+          :questions="questions.building"
+          heading="Gebäude"
+          description="Fragen zum Gebäude, in welchem sich die Wohnung befindet">
+        </RoomForm>
       </template>
       <template v-if="currentFormPage == 6">
-        <RoomForm :questions="questions.area"></RoomForm>
+        <RoomForm :questions="questions.area"
+          heading="Lage"
+          description="Fragen zur Lage der Wohnung">
+        </RoomForm>
       </template>
       <template v-if="currentFormPage == 7">
-        <RoomForm :questions="questions.special"></RoomForm>
+        <RoomForm 
+          :questions="questions.special"
+          heading="Sonderfragen"
+          description="Einige letzte Fragen zu besonderen Eigenschaften der Wohnung"></RoomForm>
       </template>
       <template v-if="currentFormPage == 8">
         <RentResult :formValue="values"></RentResult>
